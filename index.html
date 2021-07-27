@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2a30a7eea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Dimeji Situ</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul
+          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="max-height: 100px"
+        >
+          <li class="nav-item active">
+            <img
+              src="./me.jpg"
+              style="
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                object-fit: cover;
+              "
+            />
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./skills.html">Skills</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li class="navbar-nav nav-item dropleft" style="padding-right: 15px">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Details
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#resume-button">Resume</a></li>
+              <li>
+                <a class="dropdown-item" href="https://github.com/dimeji-code"
+                  >Github</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.linkedin.com/in/dimejisitu-4ba2b1211/"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="about">
+      <div id="about">
+        <h1>ABOUT</h1>
+
+        <div class="row">
+          <div class="col col-lg-6 col-md-12 col-sm-12 col-12 me-img">
+            <img
+              src="https://media3.giphy.com/media/1zKdxGDrWBhgJAQ3rk/giphy.gif?cid=ecf05e476g65jg2o7taiwxc9d6tz6x7phib9ek7xr9l0bbz9&rid=giphy.gif&ct=g"
+              class="me"
+              alt="..."
+              data-tooltip="not actually me"
+            />
+            <p>Hello World.</p>
+            <p>This is my portfolio.</p>
+          </div>
+          <div class="col col-lg-6 col-md-12 col-sm-12 col-12 me-img">
+            <p>
+              I am a graduate from Carleton University with a Bachelors Degree
+              of Computer Science. I am a web developer and software developer
+              but my area of expertise (no work experience though) is React
+              Native Development for ios and Android platforms.
+            </p>
+            <p>
+              I started out as a game developer and have some experience
+              creating games and trivia applications
+            </p>
+          </div>
+        </div>
+        <div class="logos">
+          <a href="https://github.com/dimeji-code?tab=repositories">
+            <i class="fab fa-github fa-4x logo"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dimejisitu-4ba2b1211/"
+            ><i class="fab fa-linkedin fa-4x logo"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="project-title">
+        <h1>Projects</h1>
+      </div>
+    </div>
+    <!-- My Carousel of projects -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      style="display: block; margin: 0 auto"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="proj carousel-item active">
+          <div class="card proj-1">
+            <img
+              class="card-img-top"
+              src="./therapy.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Electrotherapy</h3>
+              <h6 class="card-text">Denas electrotherapy simulation.</h6>
+              <a
+                href="#"
+                class="btn"
+                style="color: #d77a61; border: 1px solid #d77a61"
+                >See more</a
+              >
+            </div>
+          </div>
+          <div class="info">
+            <p>Language: C++ (Qt Creator)</p>
+            <p>
+              Difficulty:
+              <span>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="far fa-star fa-1x"></i>
+              </span>
+            </p>
+            <p>Group project.</p>
+            <p class="card-text">
+              Simulation of special electro-therapy hardware that administers
+              shocks to cure different ailments
+            </p>
+          </div>
+        </div>
+        <div class="proj carousel-item">
+          <div class="card proj-1">
+            <img class="card-img-top" src="./city.png" alt="Card image cap" />
+            <div class="card-body">
+              <h3 class="card-title">City_2</h3>
+              <h6 class="card-text">Aerial shooter game .</h6>
+              <a
+                href="#"
+                class="btn"
+                style="color: #d77a61; border: 1px solid #d77a61"
+                >See more</a
+              >
+            </div>
+          </div>
+          <div class="info">
+            <p>Language: Processing 3</p>
+            <p>
+              Difficulty:
+              <span>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="far fa-star fa-1x"></i>
+                <i class="far fa-star fa-1x"></i>
+                <i class="far fa-star fa-1x"></i>
+              </span>
+            </p>
+            <p>Group project for Game Dev class.</p>
+            <p>An aerial-view shooter game in a city riddled with crime.</p>
+          </div>
+        </div>
+
+        <div class="proj carousel-item">
+          <div class="card proj-1">
+            <img class="card-img-top" src="./quote.png" alt="Card image cap" />
+            <div class="card-body">
+              <h3 class="card-title">Quote Tag</h3>
+              <h6 class="card-text">Trivia game</h6>
+              <a
+                href="#"
+                class="btn"
+                style="color: #d77a61; border: 1px solid #d77a61"
+                >See more</a
+              >
+            </div>
+          </div>
+          <div class="info">
+            <p>Language: Swift (Xcode)</p>
+            <p>
+              Difficulty:
+              <span>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="fas fa-star fa-1x"></i>
+                <i class="far fa-star fa-1x"></i>
+              </span>
+            </p>
+            <p>First solo project.</p>
+            <p>
+              Trivia game that tests knowledge on tv shows and movies by getting
+              players to match famous quotes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleFade"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleFade"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="resume" style="text-align: center">
+      <div id="resume-button">
+        <a href="./yessir.pdf">
+          <i class="far fa-file-alt fa-2x"></i>
+        </a>
+      </div>
+      <h3>View my resume here.</h3>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright © <span id="year"></span></p>
+    </footer>
+
+    <!-- BUNDLE SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const d = new Date();
+      document.getElementById("year").innerHTML = d.getFullYear();
+    </script>
+  </body>
+</html>
