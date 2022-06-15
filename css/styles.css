@@ -1,8 +1,11 @@
 #body {
   background-color: #c6c7f4;
   overflow-x: hidden;
+  position: relative
+
 }
 html{
+  overflow-x: hidden;
   scroll-behavior: smooth;
   --speed: 4s;
 }
@@ -30,7 +33,7 @@ html{
   justify-content:center;
   align-items: center;
   padding: 0;
-  /* background-color: rgba(255, 255, 255, 0.044); */
+  background-color: rgba(255, 255, 255, 0.044);
 
 }
 .homeBtn:hover{
@@ -43,6 +46,9 @@ html{
 }
 #nameLOGO{
     /* background-color: rgba(255, 255, 255, 0.044); */
+    width: 233px;
+    height:52px;
+  
   margin: 0;
   padding: 0;
   display: flex;
@@ -359,7 +365,7 @@ color: #fff;
   .carousel-inner {
     padding: 4% 12%;
   }
-  .homeBtn {
+  #nameLOGO {
     width: 224px;
     height:50px;
   }
@@ -406,6 +412,10 @@ color: #fff;
   #navbar{
     height: 85px;
 
+  }
+  #nameLOGO {
+    width: 224px;
+    height:50px;
   }
   #about{
     /* padding:0.4rem; */
