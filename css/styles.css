@@ -11,6 +11,7 @@ html{
   top: 0;
   padding: 10px  20px ;
   display: flex;
+  align-items: center;
   width: 100%;
   flex:1;
   justify-content: space-between;
@@ -29,18 +30,19 @@ html{
   justify-content:center;
   align-items: center;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.044);
+  /* background-color: rgba(255, 255, 255, 0.044); */
 
 }
 .homeBtn:hover{
   box-shadow: 1px 1px 1.8px 1.2px rgba(210, 187, 222, 0.2),
     1px 1px 1.7px 1.3px rgba(96, 96, 100, 0.261), 1px 1px 1.9px 1px rgba(138, 135, 140, 0.131),
     1.0px 1.9px 11.9px 1.9px rgba(137, 135, 137, 0.294);
-    background-color: #1b284476;
+    /* background-color: #1b284476; */
     cursor: pointer;
 
 }
 #nameLOGO{
+    /* background-color: rgba(255, 255, 255, 0.044); */
   margin: 0;
   padding: 0;
   display: flex;
@@ -128,6 +130,9 @@ html{
   font-weight: 200;
   /* color: #F6FCF7; */
   color: #e9d49f;
+}
+.shorter-v{
+  display: none;
 }
 .desc h5{
   font-family: 'Crimson Text', serif;
@@ -280,6 +285,7 @@ color: #fff;
   flex-direction: column;
   align-self: center;
   align-items: center;
+  text-align: center;
   padding: 15px;
 }
 .project-title h1{
@@ -335,14 +341,35 @@ color: #fff;
   }
 }
 @media (max-width:590px){
-
+  #about{
+    /* padding:0.4rem; */
+    width: 95vw;
+  }
+  #about h1{
+    font-size: 51px;
+  }
+  .strength{
+    font-size: 13px;
+  }
   .wrapper{
     display: none;
   }
 }
 @media (max-width:600px){
-
+  .carousel-inner {
+    padding: 4% 12%;
+  }
+  .homeBtn {
+    width: 224px;
+    height:50px;
+  }
   .my-img{
+    display: none;
+  }
+  .shorter-v{
+    display: block;
+  }
+  .longer-v{
     display: none;
   }
 }
@@ -352,7 +379,8 @@ color: #fff;
     width: 85vw;
   }
   .desc > p{
-    font-size: 35px;
+    font-size: 28px;
+    text-align: center;
   }
   .midTitle{
     display: none;
