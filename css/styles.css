@@ -100,10 +100,16 @@ html{
   height: 100vh;
   width: 100vw;
   flex:0.75;
-  /* border: 1px solid rgb(52, 44, 44); */
   z-index: 4;
   display:flex;
   flex-direction: row;
+  
+}
+@media(max-width:950px){
+  #about2{
+    flex-direction: column;
+  }
+
 }
 .landingTitle{
   flex:0.4;
@@ -270,6 +276,7 @@ html{
     color: #f5f3ee;
     box-shadow: 1px 1px 1.8px 1.2px rgba(241, 237, 243, 0.2);
     text-decoration: none;
+    cursor: pointer;
   
   }
 .yellowBtn{
@@ -279,14 +286,7 @@ border: 1px solid rgba(237, 230, 230, 0.634);
 padding: 8px;
 color: #fff;
 }
-.yellowBtn:hover{
-  color: #fff;
-  background-color: #e9ad15f9;
-  border: 1px solid #ebca78fa;
-  box-shadow: 1px 1px 1.8px 1.2px rgba(241, 237, 243, 0.2);
-  text-decoration: none;
 
-}
 .someSpace{
   margin-right: 6px;
 }
@@ -481,6 +481,32 @@ color: #fff;
   }
   .wrapper{
     display: none;
+  }
+}
+@media (max-width:375px){
+  .landingTitle h4{
+    font-family: roboto;
+    color: rgba(28, 28, 30, 0.89);
+    font-size: 3.3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .landingTitle h5{
+    text-align: center;
+
+  }
+}
+@media (max-width:435px){
+  .landingTitle h4{
+    font-family: roboto;
+    color: rgba(28, 28, 30, 0.89);
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .landingTitle h5{
+    text-align: center;
+
   }
 }
 @media (max-width:600px){
