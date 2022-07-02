@@ -84,7 +84,7 @@ html{
   align-self: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   margin-bottom:-85px;
   /* background: linear-gradient(320.66deg, #081020ea 29.24%, #0d1933f6 60.93%); */
   /* background: linear-gradient(320.66deg, #e5e7ebea 29.24%, #dee2eb 60.93%); */
