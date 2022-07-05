@@ -7,7 +7,7 @@ $('.transitioner').click(function(){
 
   $('.exit').click(function(){
     //do something
-    $('.slider').css('background-color',"#b54c40")
+    $('.slider').css('background-color',"#1e050b31")
     $('.slider').css('left',"100%")
 
   });

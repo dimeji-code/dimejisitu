@@ -301,7 +301,7 @@ html{
   color: #e9d49f;
 }
 .shorter-v{
-  display: none;
+  display: block;
 }
 .desc h5{
   font-family: 'Crimson Text', serif;
