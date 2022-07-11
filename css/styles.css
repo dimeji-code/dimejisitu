@@ -95,10 +95,9 @@ html{
   /* new */
   justify-content:center;
 }
-.slider{
+.slider,.slider2{
   position: absolute;
   top: 0;
-  left: 100%;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -107,6 +106,13 @@ html{
   background-color: rgba(12, 22, 44, 0.69);
   z-index: 5;
   transition: 0.7s linear;
+}
+.slider{
+  left: 100%;
+}
+.slider2{
+  left: -100%;
+
 }
 /* ////////////////////////////////////////////////////////////////////////// */
 #about2{
@@ -143,26 +149,32 @@ html{
 .liteTxt:hover{
   color: #faf8f8e7;
 }
-.transitioner{
+.transitioner,.transitioner2{
   width: 160px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition : 1.05s ease-in-out;
-  
 }
-.transitioner a span,i {
+.transitioner a span,i  , .transitioner2 a span,i {
   font-weight: 500;
-}
-.transitioner a:hover {
+
+} 
+
+.transitioner a:hover, .transitioner2 a:hover{
   text-decoration: none;
 }
+
 .transitioner:hover{
   transform : translateX(10px);
   cursor: pointer;
 }
-.exit{
+.transitioner2:hover{
+  transform : translateX(-10px);
+  cursor: pointer;
+}
+.exit-left, .exit-right{
   margin-top: 10px;
 }
 .landingTitle{
@@ -215,7 +227,7 @@ html{
 }
 .featuredImg:hover:after{
   width: 100%;
-  content: "Click to Demo";
+  content: "Featured App";
   display: flex;
   justify-content:center;
   align-items:center;
@@ -279,6 +291,13 @@ html{
   font-weight: 500;
   color: #f0f1f5f7;
 }
+.featured-description p{
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300; */
+  color: #f8f7f5;
+}
 .desc p{
   font-size: 21px;
   line-height: 1.6;
@@ -303,15 +322,20 @@ html{
 .shorter-v{
   display: block;
 }
+.desc h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffb703;
+}
 .desc h5{
   font-family: 'Crimson Text', serif;
   font-family: 'Lora', serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 200;
-  /* color: #F6FCF7; */
   color: #ffb703;
-
 }
 .desc{
   display: flex;

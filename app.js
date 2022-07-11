@@ -5,21 +5,24 @@ $('.transitioner').click(function(){
 
   });
 
-  $('.exit').click(function(){
-    //do something
-    $('.slider').css('background-color',"#1e050b31")
-    $('.slider').css('left',"100%")
+$(".featured").click(()=>{
+  $('.slider2').css('background-color',"#b54c40")
+  $('.slider2').css('left',"0%")
+})
 
-  });
 
-// $('.transitioner').hover(
-// function(){
-// //do something
-// $('.slider').css('background-color',"#cfc")
-// $('.slider').css('left',"98%")
-// }, function(){
-// //do something
-// $('.slider').css('background-color',"#ffc")
-// $('.slider').css('left',"100%")
-// }
-// );
+
+$('.exit-right').click(function(){
+  //do something
+  $('.slider').css('background-color',"#1e050b31")
+  $('.slider').css('left',"100%")
+
+});
+
+$('.exit-left').click(function(){
+  //do something
+  $('.slider2').css('background-color',"#1e050b31")
+  $('.slider2').css('left',"-100%")
+
+});
+
