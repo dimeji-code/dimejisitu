@@ -232,24 +232,12 @@ html{
   justify-content:center;
   align-items:center;
   text-align: center;
-  /* color: rgb(48, 50, 61); */
   color: rgb(55, 47, 65);
   font-size: 30px;
   font-family: roboto;
 
 }
 
-/* .featuredImg{
-  display:flex;
-  object-fit: cover;
-  overflow: hidden;
-  padding:2%;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.847); 
-  transition: 2s ease-in-out;
-  margin:25px;
-} */
 .featuredImg:hover{
     cursor: pointer;
     box-shadow: 1px 1px 1.8px 8.1px rgba(209, 224, 209, 0.165),
@@ -267,8 +255,6 @@ html{
   width: 85vw;
   flex:0.75;
   align-items: center;
-  /* background-color:#0a1428ed; */
-  /* background-color:#040b17ed; */
   background-color:#1e050b31;
   padding:2rem;
   border-radius: 5px;
@@ -293,9 +279,6 @@ html{
 }
 .featured-description p{
   font-family: 'Roboto', sans-serif;
-  /* font-size: 18px;
-  line-height: 1.6;
-  font-weight: 300; */
   color: #f8f7f5;
 }
 .desc p{
